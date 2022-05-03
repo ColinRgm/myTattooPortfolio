@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de tatouage</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <header>
+
+<!-- NavBar ----------------------------------------------------------------------------------------------------------->
+        <nav>
+            <ul class="navbar">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="photo.html">Photos</a></li>
+                <li><a href="tableau.html">Prix</a></li>
+                <li><a href="question.html">Questions</a></li>
+                <li style="float: right"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+<!-- Formulaire ------------------------------------------------------------------------------------------------------->
+        <form id="formulaire">
+            <h1 class="information">Plus d'informations</h1>
+            <div class="grid-container4">
+                <input aria-label="name" type="text" id="name" name="name" placeholder="Nom"/>
+                <input aria-label="email" type="text" id="email" name="email" placeholder="Email" />
+                <br />
+                <textarea aria-label="message" id="message" name="message" placeholder="Message"></textarea>
+                <br />
+                <input id="bouton" type="submit" value="ENVOYER" />
+                <div id="tattoo">
+                    <input type="color" id="color" name="head" aria-label="color"
+                                   value="#171717"/>
+                    <label for="color">Couleur du tatouage</label>
+                </div>
+                <div id="yesorno">
+                    <label for="yes_tattoo">Est-ce votre premier tatouage ?</label>
+                    <div>
+                        <input type="radio" id="yes_tattoo" name="yesorno" value="oui">
+                        <label for="yes_tattoo">Oui</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="no_tattoo" name="yesorno" value="non">
+                        <label for="no_tattoo">Non</label>
+                    </div>
+                </div>
+                <select name="select" id="select" aria-label="select">
+                    <option value="">Taille voulue</option>
+                    <option value="dog">-10cm</option>
+                    <option value="cat">10cm à 30cm</option>
+                    <option value="hamster">30cm à 50cm</option>
+                    <option value="parrot">+50cm</option>
+                </select>
+            </div>
+        </form>
+        <hr class="end">
+    </main>
+</body>
+</html>

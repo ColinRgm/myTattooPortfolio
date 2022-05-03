@@ -1,0 +1,462 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+main {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+/* -- NavBar -------------------------------------------------------------------------------------------------------- */
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+li a:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.right{
+  float: right;
+}
+
+.logo {
+  display: none;
+}
+
+/* -- Titre --------------------------------------------------------------------------------------------------------- */
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+/* -- Logo ---------------------------------------------------------------------------------------------------------- */
+
+.topimg {
+  border: none;
+  border-top: 2px solid;
+  color: #ffffff;
+  overflow: visible;
+  text-align: center;
+  height: 15px;
+  width: 45%;
+}
+
+.logotitre {
+  display: block;
+  width: 400px;
+  height: 400px;
+  margin: 20px auto 40px auto;
+}
+
+.bottomimg {
+  border: none;
+  border-top: 2px solid;
+  color: #ffffff;
+  overflow: visible;
+  text-align: center;
+  height: 15px;
+  width: 90%;
+}
+
+/* -- Texte page Accueil -------------------------------------------------------------------------------------------- */
+
+.contenu {
+  text-align: center;
+  margin: 0 5% 0 5%;
+}
+
+p {
+  font-size: 17px;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: -5px;
+}
+
+.before {
+  margin-top: 50px;
+}
+
+.healed {
+  margin: 30px 0 -10px 0;
+}
+
+/* -- Listes ---------------------------------------------------------------------------------------------------------*/
+
+ul {
+  padding: 0;
+}
+
+.list {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 17px;
+  list-style-type: none;
+  line-height: 2.3;
+}
+
+/* -- Page Photo -----------------------------------------------------------------------------------------------------*/
+
+.tattoo2 {
+  align-items: center;
+  width: 350px;
+  height: 350px;
+  border-radius: 15px;
+  padding-bottom: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+}
+
+.grid-container2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  text-align: center;
+  border-right: solid 2px #ffffff;
+}
+
+.grid-container3 {
+  text-align: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.loading {
+  text-align: center;
+  color: #ffffff;
+}
+
+/* -- Table page Tableau -------------------------------------------------------------------------------------------- */
+
+table {
+  width: 100%;
+  margin: 0 0 100px 0;
+  text-align: center;
+
+}
+
+th {
+  background-color: #525252;
+  color: #ffffff;
+  width: 20%;
+}
+
+td {
+  background-color: #ffffff;
+  color: #000000;
+
+}
+
+.vide {
+  background-color: #000000;
+  height: 100px;
+}
+
+.smaller {
+  height: 100px;
+}
+
+/* -- Formulaire ---------------------------------------------------------------------------------------------------- */
+
+.grid-container4 {
+  display: grid;
+  grid-template-columns: auto 30% 30% 20% auto;
+  grid-template-rows: 100px 30px 50px 170px 30px 100px;
+  gap: 15px;
+  background-color: #ffffff;
+  border-radius: 25px;
+}
+
+#formulaire {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#name {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: white;
+  border: 0.1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+  font-size: 13px;
+}
+
+#email {
+  grid-column: 3;
+  grid-column-end: 5;
+  grid-row: 2;
+  grid-row-end: 3;
+  background-color: white;
+  border: 0.1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+  font-size: 13px;
+}
+
+#tattoo {
+  padding-top: 7px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  color: black;
+}
+
+#yesorno {
+  display: inline;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  color: black;
+}
+
+#select {
+  margin-top: 10px;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  max-height: 50px;
+}
+
+#message {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  background-color: rgb(255, 255, 255);
+  border: 0.1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+  font-size: 13px;
+  resize: none;
+}
+
+#bouton {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 7px;
+  height: 25px;
+  width: 100%;
+  align-items: flex-end;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 12px;
+}
+
+#bouton:hover {
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: bold;
+}
+
+/* -- Page question ------------------------------------------------------------------------------------------------- */
+
+.question {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+  margin-left: -1%;
+}
+
+.under {
+  border: none;
+  border-top: 2px solid;
+  color: #ffffff;
+  overflow: visible;
+  text-align: center;
+  height: 10px;
+  width: 75%;
+  margin: 100px 15% 50px 10%;
+}
+
+.contenu2 {
+  margin-left: 4%;
+}
+
+p {
+  line-height: 30px;
+}
+
+/* -- Général ------------------------------------------------------------------------------------------------------- */
+
+.end {
+  border: none;
+  border-top: 2px solid;
+  color: #ffffff;
+  overflow: visible;
+  text-align: center;
+  height: 10px;
+  width: 75%;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+/* -- Responsive ---------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1290px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+  }
+
+  .grid-container2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-right: none;
+  }
+
+  .grid-container3 {
+    margin-top: 55px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .loading {
+    padding: 150px 0 100px 0;
+    text-align: center;
+    color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .grid-container4 {
+    display: grid;
+    grid-template-columns: auto 30% 30% 20% auto;
+    grid-template-rows: 100px 30px 70px 170px 30px 100px;
+    gap: 15px;
+    background-color: #ffffff;
+    border-radius: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grid-container4 {
+    display: grid;
+    grid-template-columns: auto 30% 25% 20% 5% auto;
+    grid-template-rows: 100px 30px 80px 170px 30px 100px;
+    gap: 15px;
+    background-color: #ffffff;
+    border-radius: 25px;
+  }
+
+  #email {
+    grid-column: 3;
+    grid-column-end: 6;
+    grid-row: 2;
+    grid-row-end: 3;
+    background-color: white;
+    border: 0.1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    font-size: 13px;
+  }
+
+  #select {
+    margin-top: 10px;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  #bouton {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 7px;
+    height: 100%;
+    width: 100%;
+    align-items: flex-end;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 12px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+  }
+
+  #bouton:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+  main {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .navbar a {
+    font-size: 14.5px;
+  }
+
+  main {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  .logotitre {
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin: 20px auto 40px auto;
+  }
+
+  .grid-container4 {
+    display: grid;
+    grid-template-columns: auto 30% 25% 20% 5% auto;
+    grid-template-rows: 100px 30px 110px 170px 30px 100px;
+    gap: 15px;
+    background-color: #ffffff;
+    border-radius: 25px;
+  }
+}
